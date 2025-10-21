@@ -4,116 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Unud.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Profil Mahasiswa</title>
 </head>
 <body>
+    <div class="container">
         <header>
             <h1>Profil Mahasiswa</h1>
             <ul>
                 <li><a href="#Pendidikan">Riwayat Pendidikan</a></li>
                 <li><a href="#Hobby">Hobby</a></li>
-                <li><a href="#Pengalaman">Pengalaman Organisasi dan Lomba</a></li>
+                <li><a href="#Pengalaman">Pengalaman</a></li>
+                <li><a href="#Sosmed">Sosial Media</a></li>
             </ul>
-            <hr>
         </header>
 
-        <section>
-                <img src="ProfilPict.jpg" alt="" width="150px" height="200px">
-                <h2 id="Bioadata">Biodata</h2>
-                <p><b>Nama: </b> Steven Satyam Wijanarko</p>
-                <p><b>Alamat: </b> Bukit Hijau Jimbaran</p>
-                <p><b>Email: </b>steven1395@gmail.com</p>
-        </section>
+        <aside class="sidebar">
+            <img src="ProfilPict.jpg" alt="Foto Profil">
+            <h2>Biodata</h2>
+            <p><b>Nama:</b> Steven Satyam Wijanarko</p>
+            <p><b>Alamat:</b> Bukit Hijau Jimbaran</p>
+            <p><b>Email:</b> steven1395@gmail.com</p>
+        </aside>
 
-        <section>
-            <h2 id="Pendidikan">Pendidikan</h2>
-            <ul>
-                <li>SDK Santa Maria</li>
-                <li>SMPN 1 Gianyar</li>
-                <li>SMAN 1 Gianyar</li>
-            </ul>
-        </section>
+        <main class="content">
+            <section id="Pendidikan" class="flex-card">
+                <h2>Pendidikan</h2>
+                <ul>
+                    <li>SDK Santa Maria</li>
+                    <li>SMPN 1 Gianyar</li>
+                    <li>SMAN 1 Gianyar</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2 id="Hobby">Hobby</h2>
-            <ol>
-                <li>Traveling</li>
-                <li>Olahraga</li>
-                <li>Musik</li>
-            </ol>
-        </section>
+            <section id="Hobby" class="flex-card">
+                <h2>Hobby</h2>
+                <ol>
+                    <li>Traveling</li>
+                    <li>Olahraga</li>
+                    <li>Musik</li>
+                </ol>
+            </section>
 
-        <section>
-            <h2 id="Pengalaman">Pengalaman</h2>
-            <table border="1">
-                <tr>
-                    <th>No</th>
-                    <th>Jabatan</th>
-                    <th>Jenis Kegiatan</th>
-                    <th>Nama Kegiatan</th>
-                    <th>Tahun</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Anggota</td>
-                    <td>Kepanitiaan</td>
-                    <td>Build IT</td>
-                    <td>2025</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Peserta</td>
-                    <td>Lomba</td>
-                    <td>IEEE Fest</td>
-                    <td>2025</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Finalis</td>
-                    <td>Lomba</td>
-                    <td>FNWMU</td>
-                    <td>2025</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Peserta</td>
-                    <td>Lomba</td>
-                    <td>ITCC</td>
-                    <td>2025</td>
-                </tr>
-            </table>
-        </section>
+            <section id="Pengalaman" class="flex-card">
+                <h2>Pengalaman</h2>
+                <table border="1">
+                    <tr>
+                        <th>No</th>
+                        <th>Jabatan</th>
+                        <th>Jenis Kegiatan</th>
+                        <th>Nama Kegiatan</th>
+                        <th>Tahun</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Anggota</td>
+                        <td>Kepanitiaan</td>
+                        <td>Build IT</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Peserta</td>
+                        <td>Lomba</td>
+                        <td>IEEE Fest</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Finalis</td>
+                        <td>Lomba</td>
+                        <td>FNWMU</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Peserta</td>
+                        <td>Lomba</td>
+                        <td>ITCC</td>
+                        <td>2025</td>
+                    </tr>
+                </table>
+            </section>
 
-        <section>
-            <h2 id="Sosmed">Social Media</h2>
-            <a href="https://github.com/Steven1395">GitHub</a>
-            <br>
-            <a href="https://www.instagram.com/sssteve_fox/">Instagram</a>
-            <br>
-            <a href="https://www.linkedin.com/in/steven-satyam-wijanarko-50bb97329/">LinkedIn</a>
-        </section>
+            <section id="Sosmed" class="flex-card">
+                <h2>Social Media</h2>
+                <div class="sosmed-links">
+                    <a href="https://github.com/Steven1395" target="_blank">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a><br>
+                    <a href="https://www.instagram.com/sssteve_fox/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a><br>
+                    <a href="https://www.linkedin.com/in/steven-satyam-wijanarko-50bb97329/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </section>
 
-        <section>
-            <br>
-            <h2 id="Form">Formulir Kontak</h2>
-            <form action="">
-                <label for="nama">Nama:</label><br>
-                <input type="text" id="nama" name="nama"><br><br>
+            <section id="Form" class="flex-card">
+                <h2>Formulir Kontak</h2>
+                <form action="">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama"><br><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
 
-                <label for="pesan">Pesan</label><br>
-                <textarea name="pesan" id="pesan" style="width: 200px; height: 100px;"></textarea><br><br>
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea name="pesan" id="pesan" style="width: 95%; height: 100px;"></textarea><br><br>
 
-                <input type="submit" value="Kirim">
-            </form>
-        </section>
+                    <input type="submit" value="Kirim">
+                </form>
+            </section>
+        </main>
 
         <footer>
-            <br>
-            <hr>
             <p>&copy; 2025 Profil Steven</p>
         </footer>
+    </div>
 </body>
 </html>
